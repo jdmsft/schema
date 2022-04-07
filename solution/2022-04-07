@@ -25,7 +25,14 @@
             "type": "object",
             "properties": {
                 "type": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": [
+                        "info",
+                        "warning",
+                        "success",
+                        "error",
+                        "upsell"
+                    ]
                 },
                 "content": {
                     "type": "string"
