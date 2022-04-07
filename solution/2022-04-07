@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/jdmsft/schema/main/solution/2022-04-07",
     "title": "Solution Manifest",
     "description": "Solution Manifest",
