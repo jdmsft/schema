@@ -1,0 +1,51 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/jdmsft/schema/main/solution/2022-04-07",
+    "title": "Solution Manifest",
+    "description": "Solution Manifest",
+    "type": "object",
+    "properties": {
+        "solution": {
+            "description": "Solution Description",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "uri": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "customMessage": {
+            "description": "Custom Message",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "scope": {
+                    "type": "string",
+                    "enum": [
+                        "all",
+                        "earlierVersion"
+                    ]
+                }
+            },
+            "required": [
+                "type",
+                "content",
+                "scope"
+            ]
+        }
+    },
+    "required": [
+        "solution"
+    ]
+}
